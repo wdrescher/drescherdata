@@ -1,0 +1,5 @@
+[run]
+include = drescher_data/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
