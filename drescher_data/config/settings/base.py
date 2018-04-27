@@ -3,11 +3,11 @@ Base settings to build other settings files upon.
 """
 
 import environ
+import django_heroku
 
 ROOT_DIR = environ.Path(__file__) - 3  # (drescher_data/config/settings/base.py - 3 = drescher_data/)
 APPS_DIR = ROOT_DIR.path('drescher_data')
-
-BASE_DIR = ROOT_DIR
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 env = environ.Env()
 
@@ -254,7 +254,6 @@ SOCIALACCOUNT_ADAPTER = 'drescher_data.users.adapters.SocialAccountAdapter'
 # ------------------------------------------------------------------------------
 
 # Configure Django App for Heroku.
-import django_heroku
 django_heroku.settings(locals())
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
