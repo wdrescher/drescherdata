@@ -32,3 +32,11 @@ p {
 	font-size: 25px;
 	color: #8099A0;
 }
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #1BCFFF;
+}
+
+h2 {
+	font-size: 45px; 
+}

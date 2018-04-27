@@ -22,17 +22,16 @@ urlpatterns = [
         TemplateView.as_view(template_name="pages/pricing.html"),
         name="pricing",
     ),
-    url(
-        r"^contact/$",
-        TemplateView.as_view(template_name="pages/contact.html"),
-        name="contact",
-    ),
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, admin.site.urls),
     # User management
     url(
         r"^users/",
         include("drescher_data.users.urls", namespace="users"),
+    ),
+    url(
+        r"^contact/",
+        include("drescher_data.emails.urls", namespace="emails"),
     ),
     url(r"^accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here

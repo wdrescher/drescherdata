@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% extends 'pagebase.html' %}
 {% load staticfiles %}
+{% load crispy_forms_tags %}
 
 	{% block header %}
 		Contact
@@ -18,13 +19,17 @@
 						<div class="media-body">
 							<h2 id="header">Get in touch</h2>
 							<p id="smaller">We want your business, and we’re willing to do anything you need,
-								 wether it is late night calls or simple emails, our communications team is on it.
+								 whether it is late night calls or simple emails, our communications team is on it.
 							</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-auto">
-				<h1>FORM</h1>
+				<div class="col-6">
+					<form class="" method="post">
+						{% csrf_token %}
+					 	{{ form|crispy }}
+						<button class='btn btn-outline-secondary' type="submit" name="button">Send</button>
+					</form>
 			</div>
 		</div>
 	 {% endblock %}
