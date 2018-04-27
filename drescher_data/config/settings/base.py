@@ -249,3 +249,7 @@ SOCIALACCOUNT_ADAPTER = 'drescher_data.users.adapters.SocialAccountAdapter'
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
