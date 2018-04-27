@@ -7,6 +7,8 @@ import environ
 ROOT_DIR = environ.Path(__file__) - 3  # (drescher_data/config/settings/base.py - 3 = drescher_data/)
 APPS_DIR = ROOT_DIR.path('drescher_data')
 
+BASE_DIR = ROOT_DIR
+
 env = environ.Env()
 
 READ_DOT_ENV_FILE = env.bool('DJANGO_READ_DOT_ENV_FILE', default=False)
