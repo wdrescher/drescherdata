@@ -7,7 +7,6 @@ import django_heroku
 
 ROOT_DIR = environ.Path(__file__) - 3  # (drescher_data/config/settings/base.py - 3 = drescher_data/)
 APPS_DIR = ROOT_DIR.path('drescher_data')
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 env = environ.Env()
 
