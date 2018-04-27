@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'pagebase.html' %}
+{% load staticfiles %}
+
+	{% block header %}
+		Contact
+	{% endblock %}
+
+	{% block img_header %}
+		<img id='wrench' src="{% static "media/phone@2x.png" %}" alt="" style="margin-left:30px; margin-top: 50px;">
+	{% endblock %}
+
+	{% block body %}
+		<div class="container">
+			<div class="row">
+				<div class="col-5">
+					<div class="media">
+						<div class="media-body">
+							<h2 id="header">Get in touch</h2>
+							<p id="smaller">We want your business, and we’re willing to do anything you need,
+								 wether it is late night calls or simple emails, our communications team is on it.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-auto">
+				<h1>FORM</h1>
+			</div>
+		</div>
+	 {% endblock %}

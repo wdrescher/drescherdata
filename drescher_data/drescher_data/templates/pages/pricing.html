@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-{% extend 'base.html' %}
+{% extends 'pagebase.html' %}
+{% load staticfiles %}
 
 	{% block header %}
 		Pricing
 	{% endblock %}
 
 	{% block img_header %}
-		<img id='wrench' src="media/money.png" alt="">
+		<img id='wrench' src="{% static "media/money.png" %}" alt="">
 	{% endblock %}
 
 	{% block body %}
@@ -29,7 +30,7 @@
 					</div>
 				</div>
 				<div class="col-md-auto">
-					<img id='timeline' src="media/timeline@2x.png" alt="">
+					<img id='timeline' src="{% static "media/timeline@2x.png" %}" alt="">
 					<h2 class="move" id='header'>Timeline</h2>
 				</div>
 			</div>
