@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% extend 'base.html' %}
+
+	{% block header %}
+		Pricing
+	{% endblock %}
+
+	{% block img_header %}
+		<img id='wrench' src="media/money.png" alt="">
+	{% endblock %}
+
+	{% block body %}
+		<div class="container">
+			<div class="row">
+				<div class="col-5">
+					<div class="media">
+						<div class="media-body">
+							<h2 id="header">We Understand</h2>
+							<p id="smaller">Your business is complicated and unique,
+							so is our pricing. The advantages to migrating
+							to the cloud are clear, but we know cost is
+							 a hesitation. That is why we offer affordable
+							 pricing to launch you business to new depths,
+							 using every piece of data possible. Pricing is
+							 project based, but we can give you an offer within
+							 24 hours, and deliver the final product within two weeks.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-auto">
+					<img id='timeline' src="media/timeline@2x.png" alt="">
+					<h2 class="move" id='header'>Timeline</h2>
+				</div>
+			</div>
+		</div>
+	 {% endblock %}

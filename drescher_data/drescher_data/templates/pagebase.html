@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load staticfiles%}
+
+	{% block style %}
+		<link rel="stylesheet" href="{% static "css/services.css" %}">
+		<link rel="stylesheet" href="{% static "css/pricing.css" %}">
+	{% endblock %}
+
+	{% block content %}
+			<div class="image">
+				<img src="{% static "media/banner.png" %}" alt="Banner" style="width:100%">
+				<div class="center">
+					<h1>
+						{% block header %}
+							{# TITLE  #}
+						{% endblock %}
+					</h1>
+					<div class="relocate">
+							{% block img_header %}
+							<img id='wrench' src="media/bigwrench@2x.png" alt="">
+							{% endblock %}
+					</div>
+				</div>
+			</div>
+
+			<br> <br> <br>
+			{% block body %}
+
+			{% endblock %}
+	{% endblock %}
