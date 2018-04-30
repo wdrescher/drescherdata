@@ -81,7 +81,6 @@ THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
     'drescher_data.users.apps.UsersConfig',
-    'drescher_data.emails'
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
