@@ -47,7 +47,8 @@ DATABASES = {
         'PASSWORD': 'bandit',
         # Empty for localhost through domain sockets or           '127.0.0.1'
         # for localhost through TCP.
-        'HOST': '0.0.0.0',
+        # 'HOST': '0.0.0.0',
+        'HOST': '127.0.0.1',
         'PORT': '5432',
     }
 }
