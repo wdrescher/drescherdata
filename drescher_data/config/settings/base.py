@@ -1,11 +1,13 @@
 """
 Base settings to build other settings files upon.
 """
-
+import django
 import environ
 import os
 import django_heroku
 
+
+django.setup()
 ROOT_DIR = environ.Path(__file__) - 3  # (drescher_data/config/settings/base.py - 3 = drescher_data/)
 APPS_DIR = ROOT_DIR.path('drescher_data')
 BASE_DIR = ROOT_DIR.__str__()
