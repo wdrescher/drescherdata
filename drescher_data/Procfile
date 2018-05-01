@@ -1,1 +1,1 @@
-web: gunicorn drescher_data.wsgi --log-file -
+web: python drescher_data/manage.py runserver 0.0.0.0:$PORT
