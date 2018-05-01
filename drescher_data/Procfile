@@ -1,1 +1,1 @@
-gunicorn drescher_data.wsgi --log-file -
+web: gunicorn drescher_data.wsgi --log-file -
