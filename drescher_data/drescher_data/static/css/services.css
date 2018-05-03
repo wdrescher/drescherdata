@@ -28,19 +28,6 @@ h1 {
 	height: 220px;
 }
 
-#header {
-	font: Futura;
-	font-size: 50;
-	color: #2E6A7B;
-	text-shadow: 0px 1px 1px #676767;
-}
-
-p {
-	font: Future PT;
-	font-size: 25px;
-	color: #8099A0;
-}
-
 #chart {
 	height: 170px;
 	margin-left: 0px;
