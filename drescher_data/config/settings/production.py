@@ -63,7 +63,7 @@ X_FRAME_OPTIONS = 'DENY'
 # STORAGES
 # ------------------------------------------------------------------------------
 # https://django-storages.readthedocs.io/en/latest/#installation
-INSTALLED_APPS += ['storages', 'letsencrypt']  # noqa F405
+INSTALLED_APPS += ['storages',]  # noqa F405
 # https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html#settings
 AWS_ACCESS_KEY_ID = env('DJANGO_AWS_ACCESS_KEY_ID')
 # https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html#settings
