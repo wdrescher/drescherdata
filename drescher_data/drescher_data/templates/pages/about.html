@@ -11,23 +11,19 @@
 
 	{% block body %}
 	<div class="container">
-		<div class="row">
-			<div class="col-5">
-				<div class="media">
-					<div class="media-body">
-						<h2 id="header">Who We Are</h2>
-						<p id="smaller">
-								Our goal is to provide effective cloud and database solutions to small businessses
-								that would benefit from increased analysis and data storage. Our business creates web
-								facing database systems specifically tailored to small business needs to analyze sale trends
-								and increase business profits
-						</p>
-					</div>
-				</div>
-			</div>
-				<div class="col-md-auto">
-					<img id='timeline' src="{% static "media/clouddiagram@2x.png" %}" alt="">
-				</div>
+		<table>
+			<tr>
+				<td>
+					<h2 id="header">Who We Are</h2>
+					<p id="smaller">
+							Our goal is to provide effective cloud and database solutions to small businessses
+							that would benefit from increased analysis and data storage. Our business creates web
+							facing database systems specifically tailored to small business needs to analyze sale trends
+							and increase business profits
+					</p></td>
+				<td><img id='timeline' src="{% static "media/clouddiagram@2x.png" %}" alt=""></td>
+			</tr>
+		</table>
 		</div>
 	</div>
 

@@ -11,69 +11,61 @@
 	{% endblock %}
 
 	{% block body %}
-		<div class="container">
-		  <div class="row">
-		    <div class="col-6">
-					<div class="media">
-						<img src="{% static "media/upload@2x.png" %}" style='margin-right: 10px' id='upload'>
-						<div class="media-body">
-							<h2 id="header">Cloud Migration</h2>
-								<p>Go paperless and move your
-									company data to a cloud
-								 platform of your choosing
-								</p>
-						</div>
-					</div>
-		    </div>
-		  </div>
+	<div class="container">
+		<table>
+			<tr>
+				<td width="20%">
+					<img src="{% static "media/upload@2x.png" %}" style='margin-left: 15px' id='upload'>
+				</td>
+				<td width="30%">
+					<h2 id="header">Cloud Migration</h2>
+					<p>Go paperless and move your
+						company data to a cloud
+					 platform of your choosing
+					</p>
+				</td>
+				<td width="30%"></td>
+				<td width="20%">
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					<h2 id="header">System Design</h2>
+					<p>Create complete cloud database
+						 system. Your business is unique, your storage platform is too</p>
+				</td>
+				<td>
+					<img id="chart" src="{% static "media/freshchart.png" %}" alt="words">
+				</td>
+			</tr>
+			<tr>
+				<td><img src="{% static "media/mail.png" %}" alt=''style='margin-left: 20px'></td>
+				<td>
+					<h2 id="header">Email Subscription</h2>
+					<p>Add dynamic functionality to <br>
+						your website to send mass <br>
+						emails to a subscription list
+				</td>
+				<td></td>
+				<td></td>
+			</tr>
 
-		  <div class="row">
-				<div class="col-8">
-
-				</div>
-		    <div id="right" class="col-6">
-		      <div class="media">
-		      	<div class="media-body">
-							<h2 id="header">System Design</h2>
-								<p>Create complete cloud database
-									 system. Your business is unique, your storage platform is too</p>
-		      	</div>
-						<img id="chart" src="{% static "media/freshchart.png" %}" alt="words">
-		    	</div>
-	  		</div>
-			</div>
-
-			<div class="row">
-			 <div class="col-6">
-				 <div class="media">
-					 <img src="{% static "media/mail.png" %}" alt=''style='margin-right: 10px'>
-					 <div class="media-body">
-						 <h2 id="header">Email Subscription</h2>
-						 <p>Add dynamic functionality to <br>
-							 your website to send mass <br>
-							 emails to a subscription list
-						 </p>
-					 </div>
-				 </div>
-			 </div>
-		 </div>
-
-		 <div class="row">
-			 <div class="col-8">
-			 </div>
-			 <div id="right" class="col-6">
-				 <div class="media">
-					 <div class="media-body">
-						 <h2 id="header">User Functionality</h2>
-						 <p>Allow your users to start an
-							  account to manage all of their
-								contracts with your business.
-							  The level of client interaction is your
-								choice, and completely unlimited
-					 </div>
-					 <img id="user" src="{% static "media/Users@2x.png" %}" alt="words">
-				 </div>
-			 </div>
-		 </div>
-	 </div>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					<h2 id="header">User Functionality</h2>
+					<p>Allow your users to start an
+					 account to manage all of their
+					 contracts with your business.
+					 The level of client interaction is your
+					 choice, and completely unlimited
+				 	</p>
+			 </td>
+			 <td><img id="user" src="{% static "media/Users@2x.png" %}" alt="words"></td>
+			</tr>
+			</table>
+		</div>
 	 {% endblock %}

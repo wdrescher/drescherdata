@@ -67,49 +67,41 @@
 			<img class='image fullscreen' src='{% static "media/background.png" %}' alt="fresh">
 			<br> <br> <br>
 			<div class="container">
-			  <div class="row">
-			    <div class="col-md-auto">
-			      <img src='{% static "media/newcloud.png" %}' alt="">
-			    </div>
-			    <div class="col-6">
-						<div class="media">
-							<div class="media-body">
-								<h2 id='header' class="mt-0">Cloud</h2>
-								<p>Save everything to one place <br>for constant accuracy,<br> and connect from anywhere</p>
-							</div>
-						</div>
-			    </div>
-			  </div>
-			  <div class="row">
-			    <div class="col">
-			    </div>
-					<div class="col">
-					</div>
-			    <div class="col-md-auto">
-			      <div class="media">
-			      	<div class="media-body">
-			      		<h2 id='header' class="mt-0">Efficiency</h2>
-								<p>Manage your resources,<br> increase your profits,<br> and maximise your business hours</p>
-			      	</div>
-			      </div>
-			    </div>
-			    <div class="col-md-auto">
-			      <img src='{% static "media/freshchart.png" %}' alt="words">
-			    </div>
-			  </div>
-				<div class="row">
-				 <div class="col-md-auto">
-					 <img src='{% static "media/Mag.png" %}' alt='' style='margin-top:10px;'>
-				 </div>
-				 <div class="col-6">
-					 <div class="media">
-						 <div class="media-body">
-							 <h2 id='header' class="mt-0">Insight</h2>
-							 <p>Keep track of every aspect of <br>your business to draw new <br>conclusions that lead to direct profit</p>
-					 	</div>
-					 </div>
-				 </div>
-			 </div>
+				<table>
+					<tr>
+						<td width="20%"><img src='{% static "media/newcloud.png" %}' alt=""></td>
+						<td width="30%">
+							<h2 id='header' class="mt-0">Cloud</h2>
+							<p>Save everything to one place <br>for constant accuracy,<br> and connect from anywhere</p>
+						</td>
+						<td width="30%"></td>
+						<td width="20%"></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<h2 id='header' class="mt-0">Efficiency</h2>
+							<p>Manage your resources,<br> increase your profits,<br> and maximise your business hours</p>
+						</td>
+						<td>
+							<img src='{% static "media/freshchart.png" %}' alt="words">
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<img src='{% static "media/Mag.png" %}' alt='' style='margin-top:10px;'>
+						</td>
+						<td>
+							<h2 id='header' class="mt-0">Insight</h2>
+							<p>Keep track of every aspect of <br>your business to draw new <br>conclusions that lead to direct profit</p>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
 			</div>
 	{% endblock %}
 	</body>
