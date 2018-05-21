@@ -9,7 +9,7 @@
 
 	{% block content %}
 			<div class="image">
-				<img src="{% static "media/Banner.png" %}" alt="Banner" style="width:100%">
+				<img class="parent" src="{% static "media/Banner.png" %}" alt="Banner" style="width:100%">
 				<div class="center">
 					<h1>
 						{% block header %}
@@ -17,9 +17,7 @@
 						{% endblock %}
 					</h1>
 					<div class="relocate">
-							{% block img_header %}
-							<img id='wrench' src="media/bigwrench@2x.png" alt="">
-							{% endblock %}
+						<img id='wrench' class="child"	src= "{% block img_header %}{% endblock %}" alt="icon">
 					</div>
 				</div>
 			</div>
