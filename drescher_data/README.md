@@ -1,5 +1,4 @@
 # drescherdata
 Small Business Website Design
-The latest stable version can be found at:
 
-drescherdata.herokuapp.com
+Create interface for users to contact business via django backend with Postgres backend
